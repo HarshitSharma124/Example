@@ -82,8 +82,8 @@ class List extends Component{
 						})
 					}	
 					</ul>
-				</div>
-			</div>
+			
+			
 			)   
 	}
 }

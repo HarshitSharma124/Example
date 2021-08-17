@@ -11,8 +11,10 @@ class List extends Component{
         };
         
     }
-    removeClass(domArr){
-    	for(var i=0;i<domArr.length;i++){
+    removeClass(domArr)
+    {
+    	for(var i=0;i<domArr.length;i++)
+	{
     		domArr[i].classList.remove("selected");
     	}
     }
@@ -65,26 +67,25 @@ class List extends Component{
 		var _this = this;
 		return (
 			<div className="header-wrap">
-				<ul className="navul">
-					{
-						ListData.map(function(value,key){
-							return (
-									<li className="lipadding" key={value.key} onMouseOver={(e) => _this.hoverdown(e)} onMouseOut={(e) => _this.hoverout(e)} index = {value.key}>{value.value}</li>
-								)
-						})
-					}
-				</ul>
+	                <ul className="navul">
+			{
+			   ListData.map(function(value,key)
+		             {
+				return (
+		                      <li className="lipadding" key={value.key} onMouseOver={(e) => _this.hoverdown(e)} onMouseOut={(e) => _this.hoverout(e)}
+				     index = {value.key}>{value.value}</li>
+				     )
+			    })
+			}
 				
-					<ul>
-					{
-						listItem.map(function(value,key){
-							return (<li key={key} onClick={(e)=>_this.listOutbreak(e)}>{value}</li>)
-						})
-					}	
-					</ul>
-			
-			
-			)   
+			<ul>
+			{
+			    listItem.map(function(value,key){
+			    return (<li key={key} onClick={(e)=>_this.listOutbreak(e)}>{value}</li>)
+				})
+			}	
+			</ul>
+			//) 
 	}
 }
 export default List;

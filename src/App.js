@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import List from "./List";
 import HomePage from "./conpements/homepage";
-import ReactSlider from "./conpements/reactslider";
-import {BrowserRouter,Route } from 'react-router-dom';
+//import ReactSlider from "./conpements/reactslider";
+//import {BrowserRouter,Route } from 'react-router-dom';
 
 class App extends Component {
   componentDidMount(){

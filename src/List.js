@@ -53,7 +53,7 @@ class List extends Component{
 		this.setState({
 			checkclass:"hide"
 		});
-		//var _target = e.target;
+		
 		var href = window.location.href;
 		href = href.substring(0,href.indexOf("/"));
 		window.location.href =href +"app"
@@ -74,7 +74,7 @@ class List extends Component{
 						})
 					}
 				</ul>
-				//<div className={"listitem-wrap" + " "+ _this.state.checkclass} style={{left:_this.state.left,width:_this.state.width}} onMouseLeave={(e)=>_this.listOut(e)}>
+				
 					<ul>
 					{
 						listItem.map(function(value,key){

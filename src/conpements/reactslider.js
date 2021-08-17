@@ -44,7 +44,7 @@ class reactSlider extends Component{
     }
     doCallback() {
     	var call = slideConfig.callback;
-		if(typeof call == "function"){
+		if(typeof call === "function"){
 				call();
 		}
     }
@@ -139,7 +139,7 @@ class reactSlider extends Component{
 				<div className="navbar">
 					{
 						imgUrl.map(function(val,index){
-							if(index == _this.state.curritem ){
+							if(index === _this.state.curritem ){
 								return (
 									<span className="navbaritem curritem" index={index+1} onMouseOver={(e)=>_this.navMouseOver(e)} key={index} title={val.title}></span>
 								)
